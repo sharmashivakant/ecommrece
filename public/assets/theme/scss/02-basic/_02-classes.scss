@@ -1,0 +1,203 @@
+/*----------------------------------------*/
+/*  Template Classes CSS
+/*----------------------------------------*/
+
+.bg-img {
+  background: no-repeat center center;
+  background-size: cover;
+}
+
+.wrapper {
+  overflow-x: hidden;
+}
+
+.section-space {
+  padding-bottom: 110px;
+  padding-top: 110px;
+  @media #{$desktop-device} {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  @media #{$tablet-device, $large-mobile} {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.section-top-space {
+  padding-top: 110px;
+  @media #{$desktop-device} {
+    padding-top: 90px;
+  }
+  @media #{$tablet-device, $large-mobile} {
+    padding-top: 80px;
+  }
+}
+
+.section-bottom-space {
+  padding-bottom: 110px;
+  @media #{$desktop-device} {
+    padding-bottom: 90px;
+  }
+  @media #{$tablet-device, $large-mobile} {
+    padding-bottom: 80px;
+  }
+}
+
+.row-gutter-20 {
+  margin-right: -10px;
+  margin-left: -10px;
+  .col,
+  [class*=col-] {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.btn {
+  background-color: $primary;
+  border: 1px solid $primary;
+  box-shadow: none;
+  border-radius: 30px;
+  color: $white;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: $font-weight-medium;
+  letter-spacing: 0.1px;
+  line-height: 1.2;
+  padding: 11px 26px 9px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: $transition-base;
+  @media #{$tablet-device, $large-mobile} {
+    font-size: 11px;
+    padding: 9px 23px 8px;
+  }
+  &:hover {
+    background-color: $dark;
+    border-color: $dark;
+    color: $white;
+  }
+  &:focus {
+    box-shadow: none;
+  }
+  &.btn-white {
+    background-color: $white;
+    border-color: $white;
+    color: $black;
+    &:hover {
+      background-color: $primary;
+      border-color: $primary;
+      color: $white;
+    }
+  }
+  &.btn-border-primary {
+    background-color: transparent;
+    border-color: #E63946;
+    border-radius: 31px;
+    color: $headings-color;
+    font-size: 18px;
+    letter-spacing: 3.235px;
+    padding: 19.5px 60.5px 17.5px;
+    @media #{$desktop-device} {
+      font-size: 14px;
+      padding: 14px 25px;
+    }
+    @media #{$tablet-device} {
+      font-size: 13px;
+      letter-spacing: 1.5px;
+      padding: 9px 17px;
+    }
+    @media #{$large-mobile} {
+      font-size: 12px;
+      letter-spacing: .5px;
+      padding: 9px 17px;
+    }
+    &:hover {
+      background-color: $primary;
+      border-color: $primary;
+      color: $white;
+    }
+  }
+}
+
+.btn-border-secondary {
+  background-color: transparent;
+  border: 3px solid $secondary;
+  border-radius: 50px;
+  color: $headings-color;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: $font-weight-medium;
+  letter-spacing: 0.2em;
+  padding: 10px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  @media #{$tablet-device, $large-mobile} {
+    border-radius: 25px;
+    border-width: 2px;
+    font-size: 14px;
+    padding: 11px 25px;
+  }
+  &:hover {
+    background-color: $secondary;
+    color: $white;
+  }
+}
+
+.btn-load-more {
+  border: 2px solid $secondary;
+  border-radius: 50px;
+  color: $headings-color;
+  display: inline-block;
+  font-weight: $font-weight-medium;
+  font-size: 15px;
+  line-height: 1;
+  letter-spacing: 0.2em;
+  margin-top: 50px;
+  padding: 17px 30px;
+  text-transform: uppercase;
+  @include transition(all .3s ease-in-out);
+  @media #{$small-mobile} {
+    border-radius: 30px;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    padding: 15px 25px;
+  }
+  &:hover {
+    background-color: $secondary;
+    color: $white;
+    .icon {
+      color: $white;
+    }
+  }
+  .icon {
+    color: $body-color;
+    margin-left: 12px;
+    @include transition(all .3s ease-in-out);
+    @media #{$small-mobile} {
+      margin-left: 5px;
+    }
+  }
+}
+
+.offcanvas-backdrop,
+.modal-backdrop {
+  background-color: rgba(43, 43, 43, 0.92);
+  cursor: url('../images/icons/cancel-white.png'), auto;
+  &.show {
+    opacity: 1;
+  }
+}
+
+@media #{$small-mobile} {
+  .pt-sm-40 {
+    padding-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .pt-md-max-0 {
+    padding-top: 0 !important;
+  }
+}

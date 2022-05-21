@@ -1,0 +1,638 @@
+/*----------------------------------------*/
+/*  Contact CSS
+/*----------------------------------------*/
+
+.contact-info-item {
+  border: 1px solid $secondary;
+  border-radius: 30px;
+  padding: 55px 25px 46px;
+  text-align: center;
+  @media #{$tablet-device, $large-mobile} {
+    padding: 44px 15px 41px;
+  }
+  h4 {
+    color: $black;
+    font-size: 24px;
+    line-height: 1;
+    margin-bottom: 18px;
+    padding-bottom: 14px;
+    position: relative;
+    @media #{$tablet-device, $large-mobile} {
+      font-size: 22px;
+    }
+    &:after {
+      background-color: $body-color;
+      bottom: 0;
+      content: "";
+      height: 1px;
+      left: calc(50% - 22px);
+      position: absolute;
+      width: 44px;
+    }
+  }
+  .content {
+    font-size: 24px;
+    font-weight: $font-weight-medium;
+    @media #{$desktop-device} {
+      font-size: 18px;
+    }
+    @media #{$tablet-device, $large-mobile} {
+      font-size: 16px;
+    }
+    a {
+      color: $headings-color;
+      display: block;
+      margin-bottom: 5px;
+      @media #{$tablet-device} {
+        margin-bottom: 3px;
+      }
+      &:hover {
+        color: $body-color;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    p {
+      color: $headings-color;
+      line-height: 42px;
+      margin: 0 auto;
+      max-width: 300px;
+      @media #{$desktop-device} {
+        line-height: 35px;
+      }
+      @media #{$tablet-device, $large-mobile} {
+        line-height: 29px;
+      }
+    }
+  }
+}
+
+.contact-form-area {
+  background-color: #fafafa;
+  border-radius: 30px;
+  padding: 56px 50px 66px;
+  @media #{$tablet-device} {
+    padding: 56px 35px 66px;
+  }
+  @media #{$large-mobile} {
+    padding: 57px 30px 65px;
+  }
+  @media #{$small-mobile} {
+    padding: 50px 15px 58px;
+  }
+  h3 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    @media #{$tablet-device, $large-mobile} {
+      font-size: 36px;
+    }    
+    @media #{$small-mobile} {
+      font-size: 24px;
+    }
+  }
+  p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 69px;
+    margin-right: 30px;
+    @media #{$large-mobile} {
+      margin-bottom: 50px;
+      margin-right: 0;
+    }
+  }
+}
+
+.contact-form {
+  .form-input-item {
+    margin-bottom: 43px;
+    .form-control {
+      background-color: transparent;
+      box-shadow: none;
+      color: $headings-color;
+      font-size: 14px;
+      line-height: 1.2;
+      border-radius: 0;
+      resize: none;
+      border-width: 0 0 1px 0;
+      border-color: $secondary;
+      border-style: solid;
+      padding: 0 0 17px 0;
+
+      @include placeholder {
+        color: $body-color;
+        font-size: 12px;
+      }
+
+      &:active, &:focus {
+        border-bottom-color: $body-color;
+      }
+    }
+    textarea {
+      &.form-control {
+        min-height: 113px;
+        padding: 0 0 15px 0;
+        @media #{$small-mobile} {
+          min-height: 90px;
+        }
+      }
+    }
+    [type="submit"] {
+      background-color: transparent;
+      border: 3px solid $secondary;
+      border-radius: 50px;
+      color: $headings-color;
+      font-size: 16px;
+      font-weight: $font-weight-medium;
+      letter-spacing: .2em;
+      margin-top: 27px;
+      padding: 13px 35px;
+      text-transform: uppercase;
+      @media #{$tablet-device} {
+        border-width: 2px;
+        margin-top: 15px;
+      }
+      @media #{$large-mobile} {
+        border-width: 2px;
+        font-size: 14px;
+        margin-top: 10px;
+        padding: 11px 25px;
+      }
+      @media #{$small-mobile} {
+        margin-top: 0;
+      }
+      &:hover {
+        background-color: $secondary;
+        color: $white;
+      }
+    }
+  }
+}
+
+.form-message {
+  &.alert-success {
+    margin-top: 30px;
+    transition: $transition-base;
+  }
+}
+
+.contact-thumb {
+  @media #{$large-mobile} {
+    padding-top: 70px;
+  }
+  img {
+    left: -95px;
+    max-width: none;
+    position: relative;
+    z-index: -1;
+    @media #{$desktop-device} {
+      left: -195px;
+    }
+    @media #{$tablet-device} {
+      left: -308px;
+    }
+    @media #{$large-mobile} {
+      left: 0;
+      max-width: 100%;
+      z-index: 1;
+    }
+  }
+}
+
+.myaccount-tab-menu {
+  flex-direction: column;
+  @media #{$large-mobile} {
+    margin-bottom: 40px;
+  }
+  &.nav-tabs {
+    .nav-link {
+      background-color: transparent;
+      border: 1px solid #e5e5e5;
+      border-bottom: none;
+      border-radius: 0;
+      color: $black;
+      font-size: 15px;
+      display: block;
+      padding: 10px 15px;
+      text-align: left;
+      text-transform: capitalize;
+      &:last-child {
+        border-bottom: 1px solid #e5e5e5;
+      }
+      &.active {
+        background-color: $primary;
+      }
+      &:hover,
+      &.active {
+        background-color: $primary;
+        border-color: $primary;
+        color: $white;
+      } 
+    }
+  }
+}
+
+.myaccount-content {
+  border: 1px solid #eeeeee;
+  padding: 30px;
+  @media #{$desktop-device, $tablet-device, $large-mobile} {
+    padding: 20px;
+  }
+  form {
+    margin-top: -20px;
+  }
+  h3 {
+    font-weight: 400;
+    font-size: 20px;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+  }
+  .welcome {
+    a {
+      &:hover {
+        color: $primary;
+      }
+    }
+    strong {
+      font-weight: 600;
+      color: $primary;
+    }
+  }
+  p {
+    line-height: 28px;
+    margin-bottom: 2px;
+  }
+  fieldset {
+    margin-top: 20px;
+    & legend {
+      font-size: 16px;
+      margin-bottom: 20px;
+      font-weight: 600;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #e5e5e5;
+    }
+  }
+  .account-details-form {
+    margin-top: 50px;
+    .single-input-item {
+      margin-bottom: 20px;
+      label {
+        font-size: 14px;
+        text-transform: capitalize;
+        display: block;
+        margin: 0 0 5px;
+      }
+      input {
+        border: 1px solid #e8e8e8;
+        width: 100%;
+        height: 50px;
+        background-color: transparent;
+        padding: 2px 20px;
+        color: $headings-color;
+        font-size: 13px;
+        @include placeholder {
+          color: #1f2226;
+        }
+        &:focus {
+          border: 1px solid $headings-color;
+        }
+      }
+      button {
+        border: none;
+        background-color: $primary;
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 9px 25px;
+        color: #fff;
+        font-size: 13px;
+        &:hover {
+          background-color: #1f2226;
+        }
+      }
+    }
+  }
+}
+
+.myaccount-table {
+  white-space: nowrap;
+  font-size: 14px;
+  table,
+  .table {
+    th {
+      padding: 10px;
+      font-weight: 600;
+      background-color: #f8f8f8;
+      border-color: #ccc;
+      border-bottom: 0;
+      color: #1f2226;
+    }
+
+    td {
+      padding: 10px;
+      vertical-align: middle;
+      border-color: #ccc;
+      a {
+        font-size: 14px;
+        color: $black;
+      }
+    }
+  }
+}
+
+.saved-message {
+  background-color: #fff;
+  border-top: 3px solid $primary;
+  font-size: 14px;
+  padding: 20px 0;
+  color: #333;
+}
+
+// Login Register Table
+
+.login-register-title {
+  h2 {
+    font-size: 24px;
+    margin: 0 0 15px;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  p {
+    line-height: 1.6;
+    color: $body-color;
+    width: 85%;
+    @media #{$large-mobile} {
+      width: 100%;
+    }
+  }
+}
+
+.login-register-pr {
+  padding-right: 100px;
+  @media #{$desktop-device, $tablet-device, $large-mobile} {
+    padding-right: 0;
+  }
+}
+
+.login-register-pl {
+  padding-left: 100px;
+  @media #{$desktop-device, $tablet-device, $large-mobile} {
+    padding-left: 0;
+  }
+  @media #{$large-mobile} {
+    margin-top: 82px;
+  }
+}
+
+.login-register-border {
+  border-right: 1px solid #e5e5e5;
+  @media #{$large-mobile} {
+    border: none;
+  }
+}
+
+.login-register-content {
+  .login-register-style {
+    margin: 33px 0 0;
+    p {
+      color: $black;
+      font-size: 15px;
+      line-height: 1.8;
+      margin: 0 0 35px;
+    }
+    form {
+      .login-register-input {
+        position: relative;
+        margin-bottom: 10px;
+        input {
+          color: $headings-color;
+          width: 100%;
+          height: 51px;
+          background-color: transparent;
+          border: 1px solid #e5e5e5;
+          padding: 2px 80px 2px 16px;
+          font-size: 15px;
+          @include placeholder {
+            color: #495057;
+            opacity: 1;
+          }
+          &:focus {
+            border-color: $headings-color;
+          }
+        }
+        .forgot {
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+          a {
+            color: #4bb1cf;
+            font-size: 15px;
+          }
+        }
+      }
+      .login-register-paragraph {
+        border-bottom: 1px solid #e5e5e5;
+        border-top: 1px solid #e5e5e5;
+        padding: 15px 0;
+        margin: 30px 0 30px;
+        p {
+          font-size: 14px;
+          color: #666;
+          line-height: 1.9;
+          margin: 0;
+          a {
+            font-size: 14px;
+            color: $primary;
+            &:hover {
+              color: $headings-color;
+            }
+          }
+        }
+      }
+      .remember-me-btn {
+        display: flex;
+        align-items: center;
+        margin: 19px 0 0px;
+        input {
+          cursor: pointer;
+          width: auto;
+          height: auto;
+          margin-right: 10px;
+        }
+        label {
+          color: $black;
+          font-size: 15px;
+        }
+      }
+      .btn-register {
+        margin: 21px 0 0px;
+        .btn-register-now {
+          font-size: 14px;
+          border-radius: 3px;
+          color: $white;
+          background-color: $primary;
+          border: none;
+          line-height: 1;
+          text-align: center;
+          padding: 13px 32px 11px;
+          text-transform: uppercase;
+          @include transition(all .3s ease-in-out);
+          &:hover {
+            background-color: $headings-color;
+          }
+        }
+      }
+    }
+    .register-benefits {
+      background-color: #f3f3f3;
+      padding: 40px 30px;
+      margin-top: 60px;
+      @media #{$tablet-device, $large-mobile} {
+        padding: 30px 20px;
+      }
+      @media #{$large-mobile} {
+        margin-top: 87px;
+      }
+      h3 {
+        color: $headings-color;
+        font-size: 20px;
+        text-transform: uppercase;
+        margin: 0 0 20px;
+      }
+      p {
+        line-height: 1.6;
+        font-size: 14px;
+        color: $headings-color;
+        margin: 0 0 28px;
+      }
+      ul {
+        margin: 0;
+        li {
+          color: $body-color;
+          font-size: 16px;
+          margin: 0 0 16px;
+          @media #{$desktop-device, $tablet-device, $large-mobile} {
+            font-size: 15px;
+          }
+          &:last-child {
+            margin: 0 0 0;
+          }
+          i {
+            font-size: 20px;
+            color: $body-color;
+            margin-right: 12px;
+            position: relative;
+            top: 3px;
+            @media #{$desktop-device, $tablet-device, $large-mobile} {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Error Style Css
+.error-content {
+  padding: 191px 0 200px;
+  @media #{$desktop-device} {
+    padding: 151px 0 160px;
+  }
+  @media #{$tablet-device, $large-mobile} {
+    padding: 142px 0 150px;
+  }
+  @media #{$small-mobile} {
+    padding: 112px 0 120px;
+  }
+  h1 {
+    font-weight: 400;
+    font-size: 42px;
+    margin: 0;
+    @media #{$tablet-device, $large-mobile} {
+      font-size: 36px;
+    }
+    @media #{$large-mobile} {
+      font-size: 28px;
+    }
+    @media #{$small-mobile} {
+      font-size: 22px;
+    }
+  }
+  p {
+    line-height: 35px;
+    color: #666;
+    width: 90%;
+    margin: 20px auto 24px;
+    @media #{$tablet-device, $large-mobile} {
+      width: 100%;
+    }
+    a {
+      color: $primary;
+      &:hover {
+        color: $headings-color;
+      }
+    }
+  }
+  .error-search {
+    margin: 0 200px;
+    @media #{$desktop-device, $tablet-device, $large-mobile} {
+      margin: 0;
+    }
+    form {
+      position: relative;
+      input {
+        border-radius: 50px;
+        width: 100%;
+        height: 48px;
+        padding: 2px 50px 2px 20px;
+        color: $headings-color;
+        font-size: 15px;
+        border: 1px solid #e5e5e5;
+        background-color: transparent;
+        @include placeholder {
+          color: #495057;
+        }
+        &:focus {
+          border-color: $headings-color;
+        }
+      }
+      button {
+        position: absolute;
+        top: 56%;
+        transform: translateY(-50%);
+        right: 16px;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        img {
+          opacity: 0.7;
+          position: relative;
+          top: -3px;
+          @include transition(all .3s ease-in-out);
+        }
+        &:hover {
+          img {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+.map-area iframe {
+  width: 100%;
+  height: 750px;
+  border-radius: 0;
+  @media #{$desktop-device, $tablet-device} {
+    height: 450px;
+  }
+  @media #{$large-mobile} {
+    height: 360px;
+  }
+  @media #{$small-mobile} {
+    height: 260px;
+  }
+}

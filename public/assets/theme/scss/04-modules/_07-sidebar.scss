@@ -1,0 +1,325 @@
+/*----------------------------------------*/
+/*  Sidebar CSS
+/*----------------------------------------*/
+
+.sidebar-area {
+  .widget-item {
+    margin-bottom: 32px;
+    p {
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 18px;
+    }
+  }
+
+  .widget-title {
+    border-bottom: 1px solid #1D3557;
+    font-size: 18px;
+    margin-bottom: 21px;
+    padding-bottom: 9px;
+  }
+}
+
+.widget-search-box {
+  position: relative;
+  input {
+    background-color: transparent;
+    border: solid $secondary;
+    border-width: 0 0 1px 0;
+    border-radius: 0;
+    color: $headings-color;
+    font-family: $playfair-display;
+    font-size: 14px;
+    padding: 0 35px 8px 0;
+    width: 100%;
+    @include transition(all .3s ease-in-out);
+    @include placeholder {
+      color: $body-color;
+    }
+    &:active, &:focus {
+      background-color: transparent;
+      border-bottom-color: $body-color;
+    }
+  }
+  .btn-src {
+    background-color: transparent;
+    border: none;
+    bottom: 14px;
+    color: $headings-color;
+    font-size: 16px;
+    line-height: 1;
+    position: absolute;
+    right: 0;
+    padding: 0;
+    @include transition(all .3s ease-in-out);
+  }
+}
+
+.widget-newsletter-box {
+  position: relative;
+  input {
+    background-color: transparent;
+    border: solid $secondary;
+    border-width: 0 0 1px 0;
+    border-radius: 0;
+    color: $headings-color;
+    font-family: $playfair-display;
+    font-size: 14px;
+    padding: 0 35px 7px 0;
+    width: 100%;
+    @include transition(all .3s ease-in-out);
+    @include placeholder {
+      color: $body-color;
+    }
+    &:active, &:focus {
+      background-color: transparent;
+      border-bottom-color: $body-color;
+    }
+  }
+  .btn-src {
+    background-color: transparent;
+    border: none;
+    bottom: 13px;
+    color: $headings-color;
+    font-size: 16px;
+    line-height: 1;
+    position: absolute;
+    right: 0;
+    padding: 0;
+    @include transition(all .3s ease-in-out);
+  }
+}
+
+.widget-categories {
+  a {
+    color: $headings-color;
+    display: block;
+    font-family: $playfair-display;
+    font-size: 14px;
+    line-height: 1;
+    margin-bottom: 15px;
+    padding-left: 27px;
+    position: relative;
+    @include transition(all .3s ease-in-out);
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:before {
+      background-color: $secondary;
+      border-radius: 50%;
+      content: "";
+      height: 6px;
+      left: 0;
+      position: absolute;
+      top: calc(50% - 3px);
+      width: 6px;
+      @include transition(all .3s ease-in-out);
+    }
+    &:after {
+      background-color: $secondary;
+      border-radius: 0;
+      content: "";
+      height: 1px;
+      left: 0;
+      opacity: 0;
+      pointer-events: none;
+      position: absolute;
+      top: calc(50% - .5px);
+      width: 0;
+      @include transition(all .3s ease-in-out);
+    }
+    &:hover {
+      padding-left: 41px;
+      &:before {
+        opacity: 0;
+      }
+      &:after {
+        opacity: 1;
+        width: 18px;
+      }
+    }
+  }
+}
+
+.widget-blog {
+  &-post {
+    display: flex;
+    margin-bottom: 18px;
+    overflow: hidden;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .thumb {
+      border-radius: 10px;
+      display: flex;
+      min-width: 85px;
+      max-height: 85px;
+      overflow: hidden;
+    }
+    img {
+      border-radius: 10px;
+      max-width: 85px;
+      width: 100%;
+      transition: $transition-base;
+    }
+    .content {
+      padding-left: 15px;
+    }
+    .title {
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: $font-weight-normal;
+      line-height: 24px;
+      margin-bottom: 7px;
+      @include transition(all .3s ease-in-out);
+      @media #{$tablet-device, $large-mobile} {
+        font-size: 15px;
+      }
+      @media #{$extra-small-mobile} {
+        margin-top: -6px;
+      }
+      &:hover {
+        color: $body-color;
+      }
+    }
+    .post-date {
+      color: $headings-color;
+      font-family: $playfair-display;
+      font-size: 14px;
+      display: block;
+      line-height: 1;
+      margin-bottom: 0;
+    }
+    .btn-text {
+      color: $headings-color;
+      cursor: pointer;
+      display: inline-block;
+      font-family: $playfair-display;
+      font-size: 14px;
+      float: right;
+      line-height: 1;
+      margin-top: 25px;
+      position: relative;
+      @include transition(all .3s ease-in-out);
+      @media #{$tablet-device, $large-mobile} {
+        font-size: 12px;
+        float: none;
+        margin-top: 15px;
+      }
+      &:after {
+        background-color: $secondary;
+        bottom: 2px;
+        content: "";
+        height: 1px;
+        left: calc(-100% - 531px);
+        position: absolute;
+        width: calc(100% + 500px);
+        @media #{$tablet-device, $large-mobile} {
+          display: none;
+        }
+      }
+      &:hover {
+        color: $body-color;
+      }
+    }
+    &:hover {
+      .thumb {
+        img {
+          @include scale(1.05);
+        }
+      }
+    }
+  }
+}
+
+.widget-product {
+  &-item {
+    display: flex;
+    margin-bottom: 18px;
+    overflow: hidden;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .thumb {
+      border-radius: 10px;
+      display: flex;
+      min-width: 85px;
+      max-height: 85px;
+      overflow: hidden;
+    }
+    img {
+      border-radius: 10px;
+      max-width: 85px;
+      width: 100%;
+      transition: $transition-base;
+    }
+    .content {
+      padding-left: 15px;
+    }
+    .title {
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: $font-weight-normal;
+      line-height: 24px;
+      margin-bottom: 7px;
+      @include transition(all .3s ease-in-out);
+      @media #{$tablet-device, $large-mobile} {
+        font-size: 15px;
+      }
+      @media #{$extra-small-mobile} {
+        margin-top: -6px;
+      }
+      &:hover {
+        color: $body-color;
+      }
+    }
+    .product-price {
+      color: $headings-color;
+      font-family: $playfair-display;
+      font-size: 14px;
+      font-weight: $font-weight-medium;
+      display: block;
+      line-height: 1;
+      margin-bottom: 0;
+    }
+    .btn-text {
+      color: $headings-color;
+      cursor: pointer;
+      display: inline-block;
+      font-family: $playfair-display;
+      font-size: 14px;
+      float: right;
+      line-height: 1;
+      margin-top: 25px;
+      position: relative;
+      @include transition(all .3s ease-in-out);
+      @media #{$tablet-device, $large-mobile} {
+        font-size: 12px;
+        float: none;
+        margin-top: 15px;
+      }
+      &:after {
+        background-color: $secondary;
+        bottom: 2px;
+        content: "";
+        height: 1px;
+        left: calc(-100% - 531px);
+        position: absolute;
+        width: calc(100% + 500px);
+        @media #{$tablet-device, $large-mobile} {
+          display: none;
+        }
+      }
+      &:hover {
+        color: $body-color;
+      }
+    }
+    &:hover {
+      .thumb {
+        img {
+          @include scale(1.05);
+        }
+      }
+    }
+  }
+}

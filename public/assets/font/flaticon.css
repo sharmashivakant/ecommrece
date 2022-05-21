@@ -1,0 +1,481 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "flaticon";
+  src: url("./flaticon.ttf?c1d4d776f63028558ad0494d5707bd7f") format("truetype"), url("./flaticon.woff?c1d4d776f63028558ad0494d5707bd7f") format("woff"), url("./flaticon.woff2?c1d4d776f63028558ad0494d5707bd7f") format("woff2"), url("./flaticon.eot?c1d4d776f63028558ad0494d5707bd7f#iefix") format("embedded-opentype"), url("./flaticon.svg?c1d4d776f63028558ad0494d5707bd7f#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+  font-family: flaticon !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-shopping-cart:before {
+  content: "";
+}
+
+.flaticon-user:before {
+  content: "";
+}
+
+.flaticon-heart:before {
+  content: "";
+}
+
+.flaticon-phone-call:before {
+  content: "";
+}
+
+.flaticon-instagram:before {
+  content: "";
+}
+
+.flaticon-responsive:before {
+  content: "";
+}
+
+.flaticon-best-price:before {
+  content: "";
+}
+
+.flaticon-support:before {
+  content: "";
+}
+
+.flaticon-jigsaw:before {
+  content: "";
+}
+
+.flaticon-arrow-pointing-to-right:before {
+  content: "";
+}
+
+.flaticon-arrow-pointing-to-left:before {
+  content: "";
+}
+
+.flaticon-menu:before {
+  content: "";
+}
+
+.flaticon-search:before {
+  content: "";
+}
+
+.flaticon-time:before {
+  content: "";
+}
+
+.flaticon-linkedin:before {
+  content: "";
+}
+
+.flaticon-arrow-pointing-to-up:before {
+  content: "";
+}
+
+.flaticon-tick:before {
+  content: "";
+}
+
+.flaticon-arrow-down-sign-to-navigate:before {
+  content: "";
+}
+
+.flaticon-share:before {
+  content: "";
+}
+
+.flaticon-translate:before {
+  content: "";
+}
+
+.flaticon-exchange:before {
+  content: "";
+}
+
+.flaticon-placeholder:before {
+  content: "";
+}
+
+.flaticon-envelope:before {
+  content: "";
+}
+
+.flaticon-facebook:before {
+  content: "";
+}
+
+.flaticon-instagram-1:before {
+  content: "";
+}
+
+.flaticon-twitter:before {
+  content: "";
+}
+
+.flaticon-pinterest:before {
+  content: "";
+}
+
+.flaticon-shipping:before {
+  content: "";
+}
+
+.flaticon-puzzle:before {
+  content: "";
+}
+
+.flaticon-symbols:before {
+  content: "";
+}
+
+.flaticon-headphones:before {
+  content: "";
+}
+
+.flaticon-price-tag:before {
+  content: "";
+}
+
+.flaticon-man:before {
+  content: "";
+}
+
+.flaticon-woman:before {
+  content: "";
+}
+
+.flaticon-baby-boy:before {
+  content: "";
+}
+
+.flaticon-children:before {
+  content: "";
+}
+
+.flaticon-sun-glasses:before {
+  content: "";
+}
+
+.flaticon-formal:before {
+  content: "";
+}
+
+.flaticon-shoes:before {
+  content: "";
+}
+
+.flaticon-watch:before {
+  content: "";
+}
+
+.flaticon-necklace:before {
+  content: "";
+}
+
+.flaticon-diamond:before {
+  content: "";
+}
+
+.flaticon-cosmetics:before {
+  content: "";
+}
+
+.flaticon-sports:before {
+  content: "";
+}
+
+.flaticon-fashion:before {
+  content: "";
+}
+
+.flaticon-house:before {
+  content: "";
+}
+
+.flaticon-plus:before {
+  content: "";
+}
+
+.flaticon-minus:before {
+  content: "";
+}
+
+.flaticon-facebook-app-symbol:before {
+  content: "";
+}
+
+.flaticon-like:before {
+  content: "";
+}
+
+.flaticon-close:before {
+  content: "";
+}
+
+.flaticon-search-1:before {
+  content: "";
+}
+
+.flaticon-conversation:before {
+  content: "";
+}
+
+.flaticon-play-button:before {
+  content: "";
+}
+
+.flaticon-dashboard:before {
+  content: "";
+}
+
+.flaticon-shopping-bag:before {
+  content: "";
+}
+
+.flaticon-logout:before {
+  content: "";
+}
+
+.flaticon-visible:before {
+  content: "";
+}
+
+.flaticon-settings:before {
+  content: "";
+}
+
+.flaticon-visibility:before {
+  content: "";
+}
+
+.flaticon-user-1:before {
+  content: "";
+}
+
+.flaticon-location:before {
+  content: "";
+}
+
+.flaticon-worldwide-shipping:before {
+  content: "";
+}
+
+.flaticon-exchange-1:before {
+  content: "";
+}
+
+.flaticon-credit-card:before {
+  content: "";
+}
+
+.flaticon-delivery:before {
+  content: "";
+}
+
+.flaticon-right-quote-sign:before {
+  content: "";
+}
+
+.flaticon-right-arrow:before {
+  content: "";
+}
+
+.flaticon-twitter-1:before {
+  content: "";
+}
+
+.flaticon-instagram-2:before {
+  content: "";
+}
+
+.flaticon-pinterest-1:before {
+  content: "";
+}
+
+.flaticon-email:before {
+  content: "";
+}
+
+.flaticon-pin:before {
+  content: "";
+}
+
+.flaticon-up-arrow:before {
+  content: "";
+}
+
+.flaticon-symbols-1:before {
+  content: "";
+}
+
+.flaticon-money:before {
+  content: "";
+}
+
+.flaticon-symbols-2:before {
+  content: "";
+}
+
+.flaticon-notification:before {
+  content: "";
+}
+
+.flaticon-right-arrow-1:before {
+  content: "";
+}
+
+.flaticon-check:before {
+  content: "";
+}
+
+.flaticon-letter-x:before {
+  content: "";
+}
+
+.flaticon-go-back-arrow:before {
+  content: "";
+}
+
+.flaticon-right-arrow-2:before {
+  content: "";
+}
+
+.flaticon-google-glass-logo:before {
+  content: "";
+}
+
+.flaticon-navigate-up-arrow:before {
+  content: "";
+}
+
+.flaticon-remove:before {
+  content: "";
+}
+
+.flaticon-edit:before {
+  content: "";
+}
+
+.flaticon-photo-camera:before {
+  content: "";
+}
+
+.flaticon-hacker:before {
+  content: "";
+}
+
+.flaticon-idea:before {
+  content: "";
+}
+
+.flaticon-line-graph:before {
+  content: "";
+}
+
+.flaticon-price-tag-1:before {
+  content: "";
+}
+
+.flaticon-vector:before {
+  content: "";
+}
+
+.flaticon-theme:before {
+  content: "";
+}
+
+.flaticon-equalizer:before {
+  content: "";
+}
+
+.flaticon-briefcase:before {
+  content: "";
+}
+
+.flaticon-corporate:before {
+  content: "";
+}
+
+.flaticon-skills:before {
+  content: "";
+}
+
+.flaticon-symbols-3:before {
+  content: "";
+}
+
+.flaticon-virus-total-text-logo:before {
+  content: "";
+}
+
+.flaticon-massachusetts-institute-of-technology-logotype:before {
+  content: "";
+}
+
+.flaticon-my-life-social-logo:before {
+  content: "";
+}
+
+.flaticon-stanford-university-logo:before {
+  content: "";
+}
+
+.flaticon-club-dante-social-logotype:before {
+  content: "";
+}
+
+.flaticon-funny-or-die-logo:before {
+  content: "";
+}
+
+.flaticon-tuenti-social-logo:before {
+  content: "";
+}
+
+.flaticon-ning-social-logo:before {
+  content: "";
+}
+
+.flaticon-gather-logo:before {
+  content: "";
+}
+
+.flaticon-inside-the-hotel-logotype:before {
+  content: "";
+}
+
+.flaticon-weeworld-logo:before {
+  content: "";
+}
+
+.flaticon-blogbus-logo:before {
+  content: "";
+}
+
+.flaticon-plus-positive-add-mathematical-symbol:before {
+  content: "";
+}
+
+.flaticon-youtube:before {
+  content: "";
+}
+
+.flaticon-ringing:before {
+  content: "";
+}
+
+.flaticon-settings-1:before {
+  content: "";
+}
+
+.flaticon-minus-1:before {
+  content: "";
+}
+/*# sourceMappingURL=flaticon.css.map */
